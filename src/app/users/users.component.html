@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-lg-9">Users</div>
+    <a routerLink="/usercreate" class="btn btn-primary">create</a>
+    <br>
+    <br>
+    </div>  
+        <div class="row">
+     
+          <div class="col-lg-4 col-md-6 mb-4" style="border:2px solid black" *ngFor="let data of userdata">
+              
+            <app-usercard [userData]="data"></app-usercard>
+          </div>
+    
+    
+        </div>
+        <!-- /.row -->

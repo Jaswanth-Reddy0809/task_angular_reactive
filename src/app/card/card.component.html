@@ -1,0 +1,16 @@
+<div class="card h-100">
+    <a href="#"><img class="card-img-top" src="{{prod_data.image}}" alt=""></a>
+    <div class="card-body">
+      <h4 class="card-title">
+        <a href="#">{{prod_data.name}}</a>
+      </h4>
+      <h5>{{prod_data.currency}}{{prod_data.cost}}</h5>
+      <p class="card-text">{{prod_data.details}}</p>
+    </div>
+    <div class="card-footer">
+      <a routerLink='/edit/{{prod_data.id}}' class="btn btn-primary" style="margin: 10px;">Edit</a>
+      <button  class="btn btn-primary" style="margin: 10px;" (click)="deleteObject(prod_data.id!)">Delete</button>
+      
+    </div>
+  </div>
+  {{prod_data.name}}
